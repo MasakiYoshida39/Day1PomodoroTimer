@@ -42,7 +42,7 @@ public class PomodoroTimer extends JFrame {
         // 時間表示
         timeLabel = new JLabel("25:00", SwingConstants.CENTER);
         timeLabel.setFont(new Font("SansSerif", Font.BOLD, 60));
-        timeLabel.setForeground(new Color(178, 34, 34)); // 濃い赤
+        timeLabel.setForeground(new Color(194, 221, 255)); // 青
         add(timeLabel, BorderLayout.NORTH);
 
         // ポモドーロ回数表示
@@ -53,7 +53,7 @@ public class PomodoroTimer extends JFrame {
 
         // ボタンパネル
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setBackground(new Color(255, 248, 220));
+        buttonPanel.setBackground(new Color(194, 221, 255));
         buttonPanel.setLayout(new FlowLayout());
 
         startButton = new JButton("▶ 開始");
@@ -64,7 +64,7 @@ public class PomodoroTimer extends JFrame {
         JButton[] buttons = {startButton, stopButton, resetButton};
         for (JButton btn : buttons) {
             btn.setFont(new Font("SansSerif", Font.PLAIN, 16));
-            btn.setBackground(new Color(255, 228, 196));
+            btn.setBackground(new Color(194, 221, 255));
             btn.setFocusPainted(false);
             btn.setBorder(BorderFactory.createLineBorder(new Color(178, 34, 34), 2));
         }
