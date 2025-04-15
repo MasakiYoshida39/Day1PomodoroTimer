@@ -59,7 +59,9 @@ public class PomodoroTimer extends JFrame {
         startButton = new JButton("▶ 開始");
         stopButton = new JButton("■ 停止");
         resetButton = new JButton("↺ リセット");
-
+        
+        
+        
         // ボタンデザイン
         JButton[] buttons = {startButton, stopButton, resetButton};
         for (JButton btn : buttons) {
